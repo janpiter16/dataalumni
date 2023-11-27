@@ -2,81 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi Data Alumni</title>
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
-   
-   <!-- Feather Icon -->
-   <script src="https://unpkg.com/feather-icons"></script>
-   
-    <!-- My Style -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form | Dan Aleko</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-
-    <!-- Navbar start -->
-    <nav class="navbar">
-        <a href="#" class="navbar-logo">Data<span>Alumni</span></a>
-
-        <div class="navbar-nav">
-            <a href="#home">Home</a>
-            <a href="#about">Data Alumni</a>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Kontak</a>
-        </div>
-
-    <div class="navbar-ekstra">
-        <a href="#" id="search"><i  data-feather="search"></i></a>
-        <a href="#" id="user"><i  data-feather="user"></i></a>
-        <a href="#" id="hamburger-menu"><i  data-feather="menu"></i></a>
-    </div>
-    </nav>
-    </nav>
-    <!-- Navbar end -->
-
-    <!-- hero section start -->
-    <section class="hero" id="home">
-        <main class="content">
-            <h1>Selamat Datang <span>Alumni</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adispicing elit. Accusantium, enim</p>
-            <a href="#" class="cta">Lebih Lanjut</a>
-        </main>
-    </section>
-
-
-    <!-- hero section end -->
-    <!-- abaut section start -->
-    <section id="about" class="about">
-        <h2><span>Tentang</span> Alumni</h2>
-
-        <div class="row">
-            <div class="about-img">
-                <img src="img/tentang-alumni.jpg"
-                alt="Tentang Alumni">
-            </div>
-            <div class="content">
-                <h3>Alumni kami yang berkualitas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, iure blanditiis labore quibusdam consectetur nihil.</p>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sunt ab maiores doloribus fugit ut aspernatur corrupti dolores voluptate incidunt!</p>
-            </div>
-
-        </div>
-    </section>
-    <!-- abaut section end -->
-    <!-- Feather Icon -->
-    <script>
-        feather.replace();
-      </script>
-
-    <!-- My JaavScript -->
-    <script src="js/script.js"></script>
+  <div class="wrapper">
+    <form action="login.php" method="POST">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="register.html">Forgot Password</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Dont have an account? <a href="register.html">Register</a></p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
